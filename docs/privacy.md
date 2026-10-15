@@ -1,6 +1,6 @@
 # Privacy and data flow
 
-Release candidate, October 14, 2026. The hosted URL is proposed and has not yet been verified live. This note describes the intended method-only service; it must match the deployed configuration before release.
+Public beta, checked October 14, 2026. This note describes the method-only service hosted at `https://councils.middle3rd.com/mcp`.
 
 ## The method tool needs no decision text
 
@@ -20,9 +20,9 @@ The HTTP server still receives and processes requests, including invalid request
 
 ## Hosting and network metadata
 
-The proposed hosted service runs on Cloudflare. Like other internet infrastructure, it processes network and operational information such as IP addresses, request timing, routes, protocol information, and error or security signals. The service's application logging is disabled. That is not a claim that no infrastructure metadata is processed or retained.
+The hosted service runs on Cloudflare. Like other internet infrastructure, it processes network and operational information such as IP addresses, request timing, routes, protocol information, and error or security signals. The service's application logging is disabled. That is not a claim that no infrastructure metadata is processed or retained.
 
-Cloudflare's handling is governed by its [privacy policy](https://www.cloudflare.com/privacypolicy/) and the hosting account's configuration. Before publication, the release check must confirm that request-body logging, Workers observability, and any additional analytics or logging integrations match this note.
+Cloudflare's handling is governed by its [privacy policy](https://www.cloudflare.com/privacypolicy/) and the hosting account's configuration. The deployed Worker configuration disables Workers observability, including invocation logs and traces. This application setting does not govern all infrastructure metadata.
 
 ## Prompt, skill, and self-hosted copies
 

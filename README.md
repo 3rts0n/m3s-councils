@@ -6,11 +6,11 @@ Bring a business decision to five AI perspectives: Counterparty, Contrarian, CFO
 
 A Boot Room Labs experiment from [Middle 3rd Solutions](https://middle3rd.com).
 
-> Release candidate: the hosted URL and public repository below are proposed and have not yet been verified. This package is being prepared for review.
+> Public beta, checked October 14, 2026. The hosted connector is live. ChatGPT completed a test council; Claude connected and discovered the tool, with its council run still pending. See the [verification record](docs/connect.md#verification-record).
 
 ## Connect in Claude or ChatGPT
 
-Proposed MCP server URL:
+MCP server URL:
 
 ```text
 https://councils.middle3rd.com/mcp
@@ -58,6 +58,6 @@ The method tool takes no decision text. Your conversation stays subject to your 
 
 ## Source and status
 
-The intended public home is `3rts0n/m3s-councils`; publication is pending. The same method powers the prompt, skill, and connector. [Sources and provenance](SOURCES.md) explain its lineage and technical references.
+Repository: [3rts0n/m3s-councils](https://github.com/3rts0n/m3s-councils), with publication pending. The same method powers the prompt, skill, and connector. [Sources and provenance](SOURCES.md) explain its lineage and technical references.
 
 The method, code, and documentation are licensed under [Apache-2.0](LICENSE).

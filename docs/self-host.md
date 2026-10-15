@@ -2,7 +2,7 @@
 
 Most people should use the hosted URL or copy the prompt. This guide is for developers who want to inspect, adapt, or host the connector themselves.
 
-Release candidate: the public repository and M3S-hosted endpoint have not yet been confirmed. The instructions below describe the prepared source tree and must pass the release checks before publication.
+The M3S-hosted endpoint is in public beta, checked October 14, 2026. See the [verification record](connect.md#verification-record) for the automated and host-specific checks completed so far. Repository publication is pending.
 
 ## What runs
 
@@ -59,6 +59,14 @@ npm run deploy
 This command publishes the Worker and its configured route. Check the target account and domain before running it.
 
 ## Check the deployed endpoint
+
+Run the live smoke check against your HTTPS endpoint, replacing this example address:
+
+```sh
+npm run smoke -- https://your-public-host.example/mcp
+```
+
+The command uses official modern and legacy MCP clients. It checks discovery and tool retrieval, then compares the returned method's SHA-256 with the local `COUNCIL.md`. It contacts the endpoint you supply and makes no model API call.
 
 Verify through an MCP client, not just a browser:
 

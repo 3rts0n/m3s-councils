@@ -1,6 +1,6 @@
 # Connect M3S Councils
 
-Release candidate: `https://councils.middle3rd.com/mcp` is the proposed hosted address. Deployment and Claude/ChatGPT connection checks are not yet confirmed. Do not treat these instructions as confirmation that the service is live.
+Public beta, checked October 14, 2026. The hosted connection is live at `https://councils.middle3rd.com/mcp`. See the verification record below for the checks completed in each client.
 
 The hosted connection needs no local installation, model API key, or M3S account. Your existing AI plan and workspace permissions still apply.
 
@@ -74,3 +74,16 @@ The skill lives in [`skills/m3s-council/`](../skills/m3s-council/SKILL.md) and i
 - After a tool update in ChatGPT, refresh the connection and start a new conversation. See [OpenAI's connection testing guide](https://developers.openai.com/plugins/deploy/connect-chatgpt).
 
 Read [privacy and data flow](privacy.md) before sharing business context with your AI provider.
+
+## Verification record
+
+Checked October 14, 2026 against deployed Worker version `9cfa0224-60be-4098-a655-71efcabc216a`.
+
+| Check | Result |
+| --- | --- |
+| Automated suite | 12 tests passed, including modern and legacy SDK connections and HTTP request handling. |
+| Live MCP smoke check | Official modern and legacy clients discovered the one read-only tool and retrieved a method whose SHA-256 matched the bundled `COUNCIL.md`. |
+| ChatGPT | Installed the custom plugin and completed a fictional pilot/exclusivity council. The output disclosed a single-model role pass, used all five seats, and identified evidence gaps. |
+| Claude | Connected successfully and discovered one read-only tool. A full council run is still pending verification. |
+
+These checks establish the behavior observed on that date. They do not measure decision quality or guarantee access in every account.
