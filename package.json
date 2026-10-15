@@ -1,0 +1,28 @@
+{
+  "name": "m3s-councils",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public, read-only MCP distribution of the M3S Council method.",
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "wrangler dev --ip 127.0.0.1",
+    "types": "wrangler types",
+    "check": "npm run types && tsc --noEmit && wrangler deploy --dry-run",
+    "test": "node --experimental-strip-types --test test/*.test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.3.1",
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@modelcontextprotocol/server": "2.3.1",
+    "agents": "0.28.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest",
+    "wrangler": "latest"
+  }
+}
