@@ -2,7 +2,7 @@
 
 Most people should use the hosted URL or copy the prompt. This guide is for developers who want to inspect, adapt, or host the connector themselves.
 
-The M3S-hosted endpoint is in public beta, checked October 14, 2026. See the [verification record](connect.md#verification-record) for the automated and host-specific checks completed so far. Repository publication is pending.
+The M3S-hosted endpoint is in public beta, checked October 14, 2026. See the [verification record](connect.md#verification-record) for the automated and host-specific checks completed so far.
 
 ## What runs
 
