@@ -13,6 +13,6 @@
 - Added a clearly fictional decision brief to illustrate the output.
 - Passed 12 automated tests and live modern/legacy SDK smoke checks with matching method SHA-256.
 - Installed the custom plugin in ChatGPT and completed a fictional pilot/exclusivity council with a disclosed single-model role pass.
-- Connected Claude and discovered the one read-only tool; the full council run remains pending verification.
+- Connected Claude and completed the fictional council using five separate seat agents and three reviewers.
 
-Public repository publication remains pending. The [verification record](docs/connect.md#verification-record) distinguishes completed checks from the remaining Claude run.
+The [verification record](docs/connect.md#verification-record) records the live protocol and host checks.

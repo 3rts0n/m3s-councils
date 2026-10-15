@@ -9,8 +9,8 @@ The hosted connection needs no local installation, model API key, or M3S account
 1. Open **Customize → Connectors**.
 2. Select **+ Add → Add custom connector**.
 3. Name it **M3S Councils** and enter `https://councils.middle3rd.com/mcp`.
-4. Continue through discovery and select **No sign in**.
-5. Finish adding the connector, then enable it in your conversation through **+ → Connectors**.
+4. Continue through discovery and select **No sign-in**.
+5. Click **Add**, then **Connect** on the connector page. Enable it in your conversation through **+ → Connectors**.
 6. Ask: **“Use the M3S Council to pressure-test this decision: [your decision].”**
 
 Claude's official guide lists custom connectors for Free, Pro, Max, Team, and Enterprise. Free is limited to one custom connector. In Team and Enterprise organizations, an owner or primary owner must add the connector first. An Enterprise custom role with **Manage access to Libraries** permission can also do this. The service must be publicly reachable because Claude connects from Anthropic's infrastructure.
@@ -19,11 +19,11 @@ Source: [Claude custom connectors](https://support.claude.com/en/articles/111751
 
 ## ChatGPT
 
-1. On ChatGPT web, open **+ → Add custom MCP server**.
+1. On ChatGPT web, open **Plugins → + → Add custom MCP server**.
 2. Name it **M3S Councils** and enter `https://councils.middle3rd.com/mcp`.
 3. Select **No authentication**.
 4. Read the connection notice and choose **Create as a plugin**.
-5. Install the resulting personal plugin.
+5. Click **Connect M3S Councils** to install the resulting personal plugin.
 6. Start a new conversation, select the plugin with **@**, and ask it to use the M3S Council on your decision.
 
 Custom connections depend on account and workspace permissions. An administrator or Lockdown setting can restrict them. These steps connect a custom server; they do not depend on an entry in a public plugin directory. If the option is absent, use the prompt below or ask your workspace administrator about custom MCP access.
@@ -84,6 +84,6 @@ Checked October 14, 2026 against deployed Worker version `9cfa0224-60be-4098-a65
 | Automated suite | 12 tests passed, including modern and legacy SDK connections and HTTP request handling. |
 | Live MCP smoke check | Official modern and legacy clients discovered the one read-only tool and retrieved a method whose SHA-256 matched the bundled `COUNCIL.md`. |
 | ChatGPT | Installed the custom plugin and completed a fictional pilot/exclusivity council. The output disclosed a single-model role pass, used all five seats, and identified evidence gaps. |
-| Claude | Connected successfully and discovered one read-only tool. A full council run is still pending verification. |
+| Claude | Connected, retrieved the method, and completed the fictional council with five separate seat agents and three reviewers. The response disclosed partial anonymity and missing evidence. |
 
 These checks establish the behavior observed on that date. They do not measure decision quality or guarantee access in every account.
